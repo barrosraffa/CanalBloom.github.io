@@ -1,0 +1,45 @@
+body{
+    background-color: #706985;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+}
+
+.depoimentos{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.titulo_slide{
+    font-weight: 700;
+}
+
+.card{
+    background-color: #ffffff;
+    padding: 10px;
+    height:150px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.titulo_depoimento{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 25px;
+}
+
+.cards{
+    text-align: center;
+    display: flex;
+}
+
+.parceiros{
+    background-color: #521352;
+}
+
