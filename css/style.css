@@ -1,45 +1,84 @@
+*{
+    padding: none;
+}
+
 body{
     background-color: #706985;
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
     padding: 0;
+    color: #6c6c70;
 }
 
 .container{
     width: 100%;
 }
 
-.depoimentos{
+.testimony{
     width: 90%;
     margin: 0 auto;
+    padding-bottom: 60px;
 }
 
-.titulo_slide{
+.title_slide{
     font-weight: 700;
 }
 
-.card{
+.card {
     background-color: #ffffff;
     padding: 10px;
-    height:150px;
     background-color: #ffffff;
     border-radius: 10px;
     margin: 10px;
+    width: 34%;
 }
 
-.titulo_depoimento{
+.title-white{
     color: #ffffff;
-    font-weight: 700;
     font-size: 30px;
-    padding-left: 25px;
+    text-align: center;
 }
 
 .cards{
     text-align: center;
     display: flex;
+    justify-content: center;
 }
 
-.parceiros{
+.partners{
     background-color: #521352;
+    padding: 50px 0;
+    text-align: center;
 }
 
+.img_logo {
+    width: 100px;
+    padding: 10px;
+}
+
+/* FOOTER */
+
+.footer_white{
+    background-color: white;
+    
+}
+
+.icons_footer{
+    width: 30px;
+}
+
+.footer_white{
+    text-align: center;
+    padding: 60px 0;
+}
+
+a{
+    text-decoration: none;
+    color: #6c6c70;
+}
+
+.links_footer {
+    margin: 0 auto;
+    width: 400px;
+    padding: 40px 0px;
+}
