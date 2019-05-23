@@ -1,6 +1,9 @@
-var slider =  tns ({ 
-    container :  ' .my-slider ' , 
-    itens :  3 , 
-    slideBy :  ' page ' , 
-    autoplay :  true
-   }); 
+var slider = tns({
+   container: '.my-slider',
+   items: 1,
+   slideBy: 'page',
+  //  autoplay: true,
+   arrowKeys: true,
+   controlsContainer: '.navegation',
+   nav: false,
+ });

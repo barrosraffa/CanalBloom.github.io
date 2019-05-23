@@ -1,66 +1,137 @@
+@font-face {
+    font-family: 'MarkPro';
+    src: 
+    url('../Fontes/MarkPro/MarkPro.eot') format('embedded-opentype'),
+    url('../Fontes/MarkPro/MarkPro.woff') format('woff'), 
+    url('../Fontes/MarkPro/MarkPro.ttf')  format('truetype'),
+    url('../Fontes/MarkPro/MarkPro.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'MarkOT-Bold';
+    src: 
+    url('../Fontes/MarkOT-Bold/MarkOT-Bold.eot') format('embedded-opentype'),
+    url('../Fontes/MarkOT-Bold/MarkOT-Bold.woff') format('woff'),
+    url('../Fontes/MarkOT-Bold/MarkOT-Bold.ttf')  format('truetype'),
+    url('../Fontes/MarkOT-Bold/MarkOT-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
 *{
     padding: none;
+    font-family: 'MarkPro';
+    margin: 0 auto;
+    color: #6c6c70;
 }
 
-body{
-    background-color: #706985;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    color: #6c6c70;
+h2{
+    font-family: 'MarkOT-Bold';
 }
 
 .container{
     width: 100%;
+    background-color: #896edc;
+}
+
+/* DEPOIMENTOS */
+
+.tns-ovh {
+    width: 100%;
 }
 
 .testimony{
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
-    padding-bottom: 60px;
+    padding: 60px 0;
+    position: relative;
 }
 
-.title_slide{
-    font-weight: 700;
+.navegation {
+    position: absolute;
+    top: 60%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .card {
     background-color: #ffffff;
     padding: 10px;
-    background-color: #ffffff;
     border-radius: 10px;
     margin: 10px;
-    width: 34%;
-}
-
-.title-white{
-    color: #ffffff;
-    font-size: 30px;
-    text-align: center;
+    max-width: 20%;
 }
 
 .cards{
     text-align: center;
     display: flex;
     justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
 }
 
+.tns-outer{
+    display: flex;
+    flex-direction: column;
+}
+
+.tns-outer [data-action] {
+    display: none;
+}
+
+.title-white{
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    padding: 65px 0;
+}
+
+@media (max-width: 1024px){
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .card {
+        max-width: 35%;
+    }
+}
+
+/* PARCEIROS */
+
 .partners{
-    background-color: #521352;
+    background-color: #a275df;
     padding: 50px 0;
     text-align: center;
 }
 
-.img_logo {
-    width: 100px;
-    padding: 10px;
+.partners__logo{
+    justify-content: center;
+    align-items: center;
+}
+
+.partners__logo > img{ 
+    width: 150px;
+}
+
+/* APOIO */
+
+.support__img > img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.support__img > .img__kids{
+    max-height: 100px
 }
 
 /* FOOTER */
 
 .footer_white{
     background-color: white;
-    
 }
 
 .icons_footer{
