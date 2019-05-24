@@ -1,3 +1,4 @@
+/* MEU */
 
 @font-face {
     font-family: 'MarkPro';
@@ -36,10 +37,10 @@ h2 {
     width: 100%;
 }
 
-.header{
-    background-image: url(../../img/background-cabecalho.jpg);
+/* .header{
+    background-image: url(../../img/artboard.16.16.png);
     background-position: center;
-}
+} */
 
 /* CABEÇALHO */
 
@@ -75,9 +76,10 @@ h2 {
 }
 
 .text__information{
-    padding-top: 4%;
+    padding: 11% 0px;
     text-align: -webkit-match-parent;
     width: 40%;
+    margin-right: 20%;
 }
 
 
@@ -119,6 +121,7 @@ h2 {
     background: #ededf2;
     padding: 70px 0;
     position: relative;
+    width: 100%;
 }
 
 .navegation{
@@ -126,7 +129,7 @@ h2 {
     justify-content: space-between;
     cursor: pointer;
     position: absolute;
-    width: 98%;
+    width: 84vw;
     top: 44%;
 }
 

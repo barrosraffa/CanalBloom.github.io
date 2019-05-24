@@ -1,0 +1,23 @@
+// header
+
+.information__header {
+    object-fit: cover;  
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.btn__purple{
+    text-transform: uppercase;
+    color: #fff;
+    background: #793df5;
+    padding: 10px 40px;
+    border-radius: 20em;
+    transition: .25s;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+}
+
+
