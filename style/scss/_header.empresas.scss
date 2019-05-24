@@ -1,23 +1,135 @@
-// header
+// HEADER
 
 .information__header {
-    object-fit: cover;  
+    background-image: url('../img/artboard.16.16.png');
     display: flex;
     text-align: center;
     justify-content: center;
+    width: 100%;
+    height: 600px;
+
+    .text__information{
+        width: 40%;
+        text-align: -webkit-match-parent;
+        padding-right: 25%;
+        margin-top: 4%;
+
+        h2{
+            color: $color-purple;
+            font-size: 46px;
+            font-family: 'MarkOT-Bold';
+        }
+        
+        p{
+            color: #d7cbf7;
+            font-size: 50px;
+        }
+
+        .btn__purple{
+            @include button(10px, 20px, $color-primary, $color-tertiary, bold);
+            border: none;
+            font-size: 22px;
+        }
+    }
+}
+
+// TOPICS
+.topics__company {
     width: 90%;
+    margin: 0 auto;
+    padding: 120px 0;
+    color: #6c6c70;
+
+    .topics__box{
+        display: flex;
+        justify-content: space-around;
+        font-size: 21px;
+
+        &> div {
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+        }
+
+        .icons__topics {
+            width: 200px;
+        }
+
+        .title__icons {
+            font-family: 'MarkOT-Bold';
+            padding: 25px 0;
+            font-size: 21px;
+            font-weight: bolder;
+            color: $color-purple;
+        }
+    }
 }
 
-.btn__purple{
-    text-transform: uppercase;
-    color: #fff;
-    background: #793df5;
-    padding: 10px 40px;
-    border-radius: 20em;
-    transition: .25s;
-    cursor: pointer;
-    border: none;
-    font-size: 22px;
+/* CAROUSEL */
+.carousel__natura {
+    background: #ededf2;
+    padding: 70px 0;
+    position: relative;
+    width: 100%;
+
+    .container {
+        margin: 0 auto;
+        width: 85%;
+
+        .navegation{
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            position: absolute;
+            width: 84vw;
+            top: 44%;
+        }
+
+        .my-slider{
+            display: flex;
+
+            .div_carousel {
+                display: flex;
+                margin: 0 auto;
+                align-items: center;
+                justify-content: center;
+
+                .text_carousel {
+                    max-width: 350px;
+                    color: #6c6c70;
+
+                    .title_carousel {
+                        font-size: 30px;
+                        font-family: 'MarkOT-Bold';
+                        margin: 0;
+                    }
+
+                    &>p {
+                        font-size: 21px;
+                    }
+                }
+
+                .circule{
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #fff;
+
+                    .image_natura {
+                        width: 300px;
+                        padding-bottom: 26px;
+                    }
+                }
+            }
+        }
+
+    }
 }
 
+.tns-outer [data-action] {
+    display: none;
+}
 
